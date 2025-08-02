@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: italic;
+}
+
+label {
+  font-weight: normal;
+  color: #333;
+  min-width: 120px;
+  text-align: right;
+}
+
+input[type="text"], select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 200px;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 15px;
+  font-style: normal;
+  align-items: center;
+}
+
+.checkbox-group label, .radio-group label {
+  min-width: auto;
+  text-align: left;
+}
+
+.save-button {
+  align-self: flex-end;
+  padding: 8px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  background-color: #e0e0e0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.save-button:hover {
+  background-color: #d0d0d0;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  label {
+    text-align: left;
+    min-width: 100px;
+  }
+  .save-button {
+    align-self: center;
+  }
+}
